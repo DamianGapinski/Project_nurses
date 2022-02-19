@@ -14,7 +14,7 @@
     }
     .logo_img{
         width: 100%;
-        height: 179px;
+        height: 100%;
     }
     .img_b
     {
@@ -32,10 +32,24 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
+    top:-280px;
     left:0;
     background-color: aqua;
+    z-index:2;
+    transition: .4s ease-in;
 }
+.nav_on{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0;
+    background-color: aqua;
+    z-index:2;
+    transition: ease-in .4s;
+}
+
 header nav a:hover{
     font-size: 16px;
 }
@@ -47,7 +61,53 @@ header nav a {
     color: black;
     margin: 5px auto;
     text-decoration: none;
-    
+    border: black 1px solid ;
+}
+.burger_btn{
+    width: 50px;
+    height: 50px;
+    border: black 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.burger_barA,
+.burger_barB,
+.burger_barC{
+    width: 90%;
+    height: 10%;
+    background-color: black;
+    border-radius: 5px;
+    transition: ease-in .4s;
+}
+.burger_barA_On{
+    width: 90%;
+    height: 10%;
+    background-color:black;
+    border-radius: 5px;
+    transform: translateY(16px) rotate(45deg);
+    transition: .4s ease-in;
+}
+.burger_barB_On{
+    width: 90%;
+    height: 10%;
+    background-color:transparent;
+    border-radius: 5px;
+    transition: .4s ease-in;
+}
+.burger_barC_On{
+    width: 90%;
+    height: 10%;
+    background-color:black;
+    border-radius: 5px;
+    transform: translateY(-16px) rotate(-45deg);
+    transition: .4s ease-in;
 }
 main{
     margin-top: 50px;
@@ -65,6 +125,10 @@ main{
     text-align: center;
     margin:auto;
     flex-direction: column;
+}
+.information p {
+    padding: 10px;
+    text-align:center
 }
 .left_s
 {
@@ -91,8 +155,9 @@ main{
     text-align: center;
     margin: 0px auto 300px auto;
     display: flex;
-    height: 500px;
+    height: 650px;
     flex-direction: column;
+    place-items: center;
 }
 .img_ga
 {
@@ -102,14 +167,21 @@ main{
     border-radius: 0px 0px 50px 50px;
 }
 .grid-container {
- 
+    
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-    width: 100vw;
-    height: 50%;
+    width: 100%;
+    height: 76%;
     background-color: aliceblue;
-    margin-bottom: 20px;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid-item{
+    padding: 45px;
+    text-align: center;
+    overflow-x: hidden;
 }
 .money
 {
@@ -159,7 +231,7 @@ main{
     margin: auto;
 }
 .grid-item2 {
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
   margin: auto;
    
@@ -169,12 +241,15 @@ main{
     margin: auto;
 }
 .img{
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     border-radius: 50px;
 }
 footer{
     flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
 }
 #btn {
     position: fixed;

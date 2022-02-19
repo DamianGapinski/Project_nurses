@@ -11,3 +11,18 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+let burgerBtn = document.querySelector('.burger_btn');
+const nav = document.querySelector('nav');
+const burgerBarA = document.querySelector('.burger_barA');
+const burgerBarB = document.querySelector('.burger_barB');
+const burgerBarC = document.querySelector('.burger_barC');
+
+burgerBtn = document.addEventListener('click', () =>{
+  nav.classList.toggle('nav_on')
+  burgerBarA.classList.toggle('burger_barA_On')
+  burgerBarB.classList.toggle('burger_barB_On')
+  burgerBarC.classList.toggle('burger_barC_On')
+
+})
