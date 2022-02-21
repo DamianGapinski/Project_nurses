@@ -13,13 +13,14 @@
         position: relative;
     }
     .logo_img{
-        width: 100%;
-        height: 100%;
+        width: 412px;
+        height: 275px;
     }
     .img_b
     {
         display: none;
     }
+    
     header .left{
         width: 100vw;
         height: 100%;
@@ -27,25 +28,24 @@
         justify-content:right;
         align-items: center;
     }
-    header nav{
+     header nav{
     flex-direction: column;
+    padding: 20px;
     width: 100%;
-    height: 100%;
+    height: 300px;
     position: absolute;
-    top:-280px;
-    left:0;
-    background-color: aqua;
-    z-index:2;
+    right:0 ;
+    top:-300px;
     transition: .4s ease-in;
+    background-color: transparent;
 }
 .nav_on{
     flex-direction: column;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0px;
-    left:0;
-    background-color: aqua;
+    top:0;
+    background-color: aliceblue;
     z-index:2;
     transition: ease-in .4s;
 }
@@ -72,10 +72,10 @@ header nav a {
     top:10px;
     right: 10px;
     z-index: 3;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    display: flex;
 }
 .burger_barA,
 .burger_barB,
@@ -112,7 +112,7 @@ header nav a {
 main{
     margin-top: 50px;
 }
-#hallo
+.hallo
 {
     text-align: center;
     margin: 50px auto 30px auto;
@@ -251,7 +251,7 @@ footer{
     padding: 10px;
     font-size: 16px;
 }
-#btn {
+.btn {
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -265,34 +265,5 @@ footer{
     border-radius: 4px;
     display: none;
   }
-  #scroll
-{
-    position: absolute;
-    visibility:hidden;
-    top:240px;
-}
-#scroll2
-{
-    position: absolute;
-    visibility:hidden;
-    top:950px;
-}
-#scroll3
-{
-    position: absolute;
-    visibility:hidden;
-    top:1830px;
-}
-#scroll4
-{
-    position: absolute;
-    visibility:hidden;
-    top:2450px;
-}
-#scroll5
-{
-    position: absolute;
-    visibility:hidden;
-    top:3150px;
-}
+  
 }
