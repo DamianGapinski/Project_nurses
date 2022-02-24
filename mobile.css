@@ -25,7 +25,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
-        justify-content:right;
+        justify-content:center;
         align-items: center;
     }
      header nav{
@@ -38,6 +38,7 @@
     top:-300px;
     transition: .4s ease-in;
     background-color: transparent;
+    
 }
 .nav_on{
     flex-direction: column;
@@ -50,18 +51,22 @@
     transition: ease-in .4s;
 }
 
-header nav a:hover{
-    font-size: 16px;
+header nav li:hover{
+    font-size: 30px;
 }
-header nav a {
-    width: 150px;
-    font-size: 15px;
-    height: 30px;
+nav ul{
+    opacity: 1 !important;
+}
+header nav li {
+    width: 300px;
+    font-size: 24px;
+    height: 40px;
     padding: 5px;
     color: black;
-    margin: 5px auto;
-    text-decoration: none;
     border: black 1px solid ;
+    list-style: none;
+    margin: 20px 0;
+    border-radius: 15px;
 }
 .burger_btn{
     width: 50px;
